@@ -11,8 +11,8 @@
 
         public Printer(string name, string model)
         {
-            Name = name;
-            Model = model;
+            Name = name ?? throw new ArgumentNullException(nameof(name));
+            Model = model ?? throw new ArgumentNullException(nameof(model));
         }
 
         public override bool Equals(object obj)
@@ -34,14 +34,17 @@
             if (other == null)
                 return false;
 
+            if (this.GetHashCode() != other.GetHashCode())
+                return false;
+
             return this.Name == other.Name && this.Model == other.Model;
         }
 
-        public abstract void Print(FileStream fs);
+        internal abstract void Print(FileStream fs);
 
         public override int GetHashCode()
         {
-            return Name.GetHashCode() + Model.GetHashCode();
+            return this.Name.GetHashCode() + this.Model.GetHashCode();
         }
     }
 }

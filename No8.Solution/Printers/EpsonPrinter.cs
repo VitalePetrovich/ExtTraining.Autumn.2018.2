@@ -7,7 +7,7 @@ namespace No8.Solution
     {
         public EpsonPrinter(string model) : base("Epson", model) { }
        
-        public override void Print(FileStream fs)
+        internal override void Print(FileStream fs)
         {
             if (fs == null)
                 throw new ArgumentNullException(nameof(fs));

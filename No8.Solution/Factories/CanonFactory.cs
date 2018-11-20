@@ -12,6 +12,7 @@ namespace No8.Solution.Factories
 
         public CanonFactory Instanse => LazyCanonFactory.Value;
         
-        public override Printer GetNewPrinter(string model) => new CanonPrinter(model);
+        public override Printer GetNewPrinter(string model) 
+            => string.IsNullOrWhiteSpace(model)?throw new ArgumentNullException(nameof(model)):new CanonPrinter(model);
     }
 }

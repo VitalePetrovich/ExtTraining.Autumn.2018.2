@@ -12,6 +12,7 @@ namespace No8.Solution.Factories
 
         public EpsonFactory Instance => LazyEpsonFactory.Value;
 
-        public override Printer GetNewPrinter(string model) => new EpsonPrinter(model);
+        public override Printer GetNewPrinter(string model)
+            => string.IsNullOrWhiteSpace(model)?throw new ArgumentNullException(nameof(model)):new EpsonPrinter(model);
     }
 }
