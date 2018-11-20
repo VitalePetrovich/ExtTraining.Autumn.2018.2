@@ -1,0 +1,5 @@
+[20.11.2018 19:39:33] :: INFO :: Add new printer: Epson - 123
+[20.11.2018 19:39:41] :: INFO :: Epson - 123 start printing file: C:\Users\Виталий\Desktop\BANK.txt
+[20.11.2018 19:39:41] :: INFO :: Epson - 123 end printing file: C:\Users\Виталий\Desktop\BANK.txt
+[20.11.2018 19:52:50] :: INFO :: Add new printer: Canon - 213
+[20.11.2018 19:52:56] :: INFO :: Add new printer: Canon - 453

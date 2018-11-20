@@ -8,3 +8,16 @@ C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumn.2018.2-master\No
 C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumn.2018.2-master\No8.Solution.Console\obj\Debug\No8.Solution.Console.csproj.CopyComplete
 C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumn.2018.2-master\No8.Solution.Console\obj\Debug\No8.Solution.Console.exe
 C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumn.2018.2-master\No8.Solution.Console\obj\Debug\No8.Solution.Console.pdb
+C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumb.2018.2\No8.Solution.Console\bin\Debug\No8.Solution.Console.exe.config
+C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumb.2018.2\No8.Solution.Console\bin\Debug\No8.Solution.Console.exe
+C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumb.2018.2\No8.Solution.Console\bin\Debug\No8.Solution.Console.pdb
+C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumb.2018.2\No8.Solution.Console\bin\Debug\No8.Solution.dll
+C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumb.2018.2\No8.Solution.Console\bin\Debug\No8.Solution.pdb
+C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumb.2018.2\No8.Solution.Console\obj\Debug\No8.Solution.Console.csprojAssemblyReference.cache
+C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumb.2018.2\No8.Solution.Console\obj\Debug\No8.Solution.Console.csproj.CoreCompileInputs.cache
+C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumb.2018.2\No8.Solution.Console\obj\Debug\No8.Solution.Console.csproj.CopyComplete
+C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumb.2018.2\No8.Solution.Console\obj\Debug\No8.Solution.Console.exe
+C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumb.2018.2\No8.Solution.Console\obj\Debug\No8.Solution.Console.pdb
+C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumb.2018.2\No8.Solution.Console\bin\Debug\NLog.config
+C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumb.2018.2\No8.Solution.Console\bin\Debug\NLog.dll
+C:\Users\Виталий\Desktop\NET-Training\ExtTraining.Autumb.2018.2\No8.Solution.Console\bin\Debug\NLog.xml

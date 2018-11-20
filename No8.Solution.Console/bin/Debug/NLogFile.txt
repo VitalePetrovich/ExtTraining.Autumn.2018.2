@@ -1,0 +1,6 @@
+2018-11-20 19:39:33.2604|INFO|No8.Solution.Logger.NLogLogger|Add new printer: Epson - 123
+2018-11-20 19:39:41.1256|INFO|No8.Solution.Logger.NLogLogger|Epson - 123 start printing file: C:\Users\Виталий\Desktop\BANK.txt
+2018-11-20 19:39:41.3435|INFO|No8.Solution.Logger.NLogLogger|Epson - 123 end printing file: C:\Users\Виталий\Desktop\BANK.txt
+2018-11-20 19:59:48.4789|INFO|No8.Solution.Logger.NLogLogger|Add new printer: Canon - 23123
+2018-11-20 20:00:13.9490|INFO|No8.Solution.Logger.NLogLogger|Canon - 23123 start printing file: C:\Users\Виталий\Desktop\BANK.txt
+2018-11-20 20:00:14.0887|INFO|No8.Solution.Logger.NLogLogger|Canon - 23123 end printing file: C:\Users\Виталий\Desktop\BANK.txt

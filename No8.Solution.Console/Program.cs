@@ -1,31 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using No8.Solution;
+using No8.Solution.Factories;
+using No8.Solution.Logger;
 
 namespace No8.Solution.Console
 {
-    using No8.Solution.Factories;
-
     using Console = System.Console;
-
+    
     class Program
     {
         [STAThread]
         static void Main(string[] args)
         {
-               ShowMenu();
+            PrinterManager printerManager = new PrinterManager();
+            ShowMenu(printerManager);
         }
 
-        static void ShowMenu()
+        private static void ShowMenu(PrinterManager printerManager)
         {
+            if (printerManager == null)
+                throw new ArgumentNullException(nameof(printerManager));
+
             while (true)
             {
+                Console.Clear();
+
                 int i = 2;
                 Console.WriteLine("1:Add new printer");
-                foreach (var menuLine in PrinterManager.Printers.Select(p => $"{i++}:Print on {p.Name} - {p.Model}"))
+                foreach (var menuLine in printerManager.Printers.Select(p => $"{i++}:Print on {p.Name} - {p.Model}"))
                 {
                     Console.WriteLine(menuLine);
                 }
@@ -35,30 +37,29 @@ namespace No8.Solution.Console
 
                 switch (input)
                 {
-                    case 1: CreatePrinter(); break;
+                    case 1: CreatePrinter(printerManager); break;
                     case 0: return;
                     default:
-                        Print(PrinterManager.Printers[input - 2]);
+                        printerManager.Print(printerManager.Printers[input - 2]);
+                        Console.ReadKey();
                         break;
                 }
             }
         }
-
-        private static void Print(Printer printer)
-        {
-            PrinterManager.Print(printer);
-        }
         
-        private static void CreatePrinter()
+        private static void CreatePrinter(PrinterManager printerManager)
         {
+            if (printerManager == null)
+                throw new ArgumentNullException(nameof(printerManager));
+
             Console.WriteLine("Enter name.");
             string name = Console.ReadLine();
             switch (name)
             {
                 case "Epson":
-                    PrinterManager.Add(ReadModel(), new EpsonFactory()); break;
+                    printerManager.Add(ReadModel(), new EpsonFactory()); break;
                 case "Canon":
-                    PrinterManager.Add(ReadModel(), new CanonFactory()); break;
+                    printerManager.Add(ReadModel(), new CanonFactory()); break;
                 default:
                     Console.WriteLine($"Unknown type of printer, try another."); break;
             }
