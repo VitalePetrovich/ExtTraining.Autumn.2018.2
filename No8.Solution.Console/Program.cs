@@ -12,7 +12,7 @@ namespace No8.Solution.Console
         [STAThread]
         static void Main(string[] args)
         {
-            PrinterManager printerManager = new PrinterManager();
+            PrinterManager printerManager = new PrinterManager(new FileLogger());
             ShowMenu(printerManager);
         }
 
